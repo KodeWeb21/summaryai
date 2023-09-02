@@ -1,0 +1,123 @@
+:root{
+    --background-body: #F3F4F6;
+    --background-btn-primary: #000000;
+    --background-input-box: #FFFFFF;
+    --background-input: #F5F5F5;
+    --background-text: #F8F8F8;
+}
+
+body{
+    background-color: var(--background-body);
+    max-width: 1440px;
+    margin: 20px auto;
+}
+
+.header,
+.content{
+    padding: 5px;
+}
+
+.logo{
+    font-family:  "Inria Regular", serif;
+}
+
+.title{
+    margin: 50px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Inria Bold", serif;
+    font-weight: bold;
+}
+
+.container--inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 270px;
+    max-width: 430px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    background-color: var(--background-input-box);
+    padding: 30px 15px;
+    gap: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,12.16%);
+    box-sizing: border-box;
+}
+
+.inputbox__input{
+    border: 0;
+    background-color: var(--background-input);
+    min-height: 110px;
+    padding: 5px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.inputbox__input--summary{
+    background-color: inherit;
+}
+
+.btn{
+    background: none;
+    border: 0;
+    align-self: flex-end;
+}
+
+.btn--primary{
+    min-width: 108px;
+    color: var(--background-text);
+    border-radius: 20px;
+    background-color: var(--background-btn-primary);
+    font-family: "Inria Regular";
+    padding: 10px;
+}
+
+.btn-icon{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (min-width: 450px){
+    .container--inputs{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 660px){
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .container--inputs{
+        flex-direction: row;
+        gap: 50px;
+        align-items: stretch;
+    }
+
+    .inputbox{
+        width: 30%;
+        padding: 30px 25px;
+
+    }
+
+    .logo{
+        font-size: 1.1rem;
+    }
+
+    .btn{
+        cursor: pointer;
+    }
+    
+}
