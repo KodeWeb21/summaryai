@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <style> 
         @font-face {     
@@ -30,17 +31,18 @@
         <div class="container--inputs">
             <!-- User input -->
             <div class="inputbox">
-                <div contenteditable="true" class="inputbox__input"></div>
-                <button class="btn btn--primary">summarize</button>
+                <div contenteditable="true" class="inputbox__input" id="sumaryInput"></div>
+                <button class="btn btn--primary" id="summarize">summarize</button>
             </div>
             
             <div class="inputbox">
-                <div contenteditable="true" class="inputbox__input inputbox__input--summary"></div>
-                <button class="btn">
+                <div  class="inputbox__input inputbox__input--summary" id="summaryResult"></div>
+                <button class="btn" id="copy">
                     <img src="{{asset('images/copy.svg')}}" class="btn-icon" >
                 </button>
             </div>
         </div>
     </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
