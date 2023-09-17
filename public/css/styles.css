@@ -87,6 +87,31 @@ body{
     height: 30px;
 }
 
+#copy{
+    display: flex;
+    align-items: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* .content{
+    overflow: hidden;
+} */
+
+/* .message-copy{
+    background-color: var(--background-btn-primary);
+    color: white;
+    display: inline-block;
+    margin: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+    transform: translateY(130%);
+    transition: transform .2s ease-in-out;
+} */
+
 @media screen and (min-width: 450px){
     .container--inputs{
         align-items: center;
