@@ -9,7 +9,7 @@ use GuzzleHttp;
 class apicontroller extends Controller
 {
     private string $endpoint = "https://api.meaningcloud.com/summarization-1.0";
-    private string $key = "939e51e11692e4e2e59cc789835dd407";
+    private int $sentences = 5;
     public function resume(Request $request){
         $request->validate([
             "txt"=>"required|min:3"
@@ -18,11 +18,11 @@ class apicontroller extends Controller
        
         $client = new GuzzleHttp\Client();
 
-        $response = $client->post('https://api.meaningcloud.com/summarization-1.0', [
+        $response = $client->post($this->endpoint, [
             'multipart' => [
                 [
                     'name'     => 'key',
-                    'contents' => '939e51e11692e4e2e59cc789835dd407'
+                    'contents' => env("API_KEY")
                 ],
                 [
                     'name'     => 'txt',
@@ -30,7 +30,7 @@ class apicontroller extends Controller
                 ],
                 [
                     'name'     => 'sentences',
-                    'contents' => 5
+                    'contents' => $this->sentences
                 ]
             ]
         ]);
