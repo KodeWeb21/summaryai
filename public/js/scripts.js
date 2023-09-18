@@ -59,3 +59,9 @@ copy.addEventListener("click",async ()=>{
         throw new Error("No se pudo copiar el texto al portapapeles");
     }
 })
+
+summaryInput.addEventListener('paste', (e) => {
+    e.preventDefault();
+    const text = e.clipboardData.getData('text/plain');
+    document.execCommand('inserttext', false, text);
+});
