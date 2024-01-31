@@ -51,6 +51,9 @@
                 </button>
             </div>
         </div>
+        <div class="container-twitter">
+        <a class="twitter-follow-button" href="https://twitter.com/BryantScript" target="__blank"> Follow @BryantScript</a>
+        </div>
     </div>
     <script src="js/scripts.js"></script>
 </body>
