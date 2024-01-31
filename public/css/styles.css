@@ -10,6 +10,7 @@ body{
     background-color: var(--background-body);
     max-width: 1440px;
     margin: 20px auto;
+    position: relative;
 }
 
 .header,
@@ -96,21 +97,26 @@ body{
     font-weight: bold;
 }
 
-/* .content{
-    overflow: hidden;
-} */
+.container-twitter{
+    text-align: center;
+}
 
-/* .message-copy{
+.twitter-follow-button{
+    color: var(--background-text);
+    border-radius: 20px;
+    font-size: 14px;
     background-color: var(--background-btn-primary);
-    color: white;
+    font-family: "Inria Regular";
+    padding: 10px;
+    text-decoration: none;
     display: inline-block;
-    margin: 0 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 2px;
-    transform: translateY(130%);
-    transition: transform .2s ease-in-out;
-} */
+    margin-top: 30px;
+}
+
+.btn--primary:hover,
+.twitter-follow-button:hover{
+    background-color: rgba(0, 0, 0,.8);
+}
 
 @media screen and (min-width: 450px){
     .container--inputs{
@@ -143,6 +149,12 @@ body{
 
     .btn{
         cursor: pointer;
+    }
+
+    .twitter-follow-button{
+        position: fixed;
+        right: 45px;
+        top: 90vh;
     }
     
 }
