@@ -31,6 +31,12 @@
 <body>
     <header class="header">
         <span class="logo">SummaryAI</span>
+        <nav class="nav nav--hidden">
+          <ul class="nav__container">
+             <li class="nav__item"><a class="nav__link" href="/frequent">Frequent questions</a></li>
+             <li class="nav__item"><a class="nav__link" href="/privacy">Privacy</a></li>
+          </ul>
+        </nav>
     </header>
     <div class="content">
         <h1 class="title">
@@ -54,6 +60,14 @@
         <div class="container-twitter">
         <a class="twitter-follow-button" href="https://twitter.com/BryantScript" target="__blank"> Follow @BryantScript</a>
         </div>
+        <footer class="footer">
+        <nav class="nav">
+          <ul class="nav__container">
+            <li class="nav__item"><a class="nav__link" href="/frequent">Frequent questions</a></li>
+            <li class="nav__item"><a class="nav__link" href="/privacy">Privacy</a></li>
+          </ul>
+        </nav>
+        </footer>
     </div>
     <script src="js/scripts.js"></script>
 </body>
