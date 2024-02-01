@@ -18,4 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/frequent',function(){
+    return view('frequent');
+});
+
+Route::get('/privacy',function(){
+    return view('privacy');
+});
+
 Route::post('/resume',[apiController::class,"resume"]);
