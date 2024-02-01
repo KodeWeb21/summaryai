@@ -118,6 +118,35 @@ body{
     background-color: rgba(0, 0, 0,.8);
 }
 
+.footer{
+    margin-top: 50px;
+}
+
+.nav__container{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.header,
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.nav--hidden{
+    display: none;
+}
+
+
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+
 @media screen and (min-width: 450px){
     .container--inputs{
         align-items: center;
@@ -155,6 +184,22 @@ body{
         position: fixed;
         right: 45px;
         top: 90vh;
+    }
+
+    .footer{
+        display: none;
+    }
+    
+    .nav--hidden{
+        display: block;
+    }
+
+    .nav__container{
+        gap: 10px;
+    }
+
+    .nav__item{
+        cursor: pointer;
     }
     
 }
