@@ -1,0 +1,167 @@
+:root{
+    --background-body: #F3F4F6;
+    --background-btn-primary: #000000;
+    --background-input-box: #FFFFFF;
+    --background-input: #F5F5F5;
+    --background-text: #F8F8F8;
+}
+
+body{
+    background-color: var(--background-body);
+    /* max-width: 1440px; */
+    /* margin: 20px auto; */
+    margin: 0;
+    position: relative;
+}
+
+.header{
+    padding: 15px;
+}
+
+.logo{
+    font-family:  "Inria Regular", serif;
+}
+
+.title{
+    margin: 50px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Inria Bold", serif;
+    font-weight: bold;
+}
+
+
+.nav__container{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.header,
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+
+
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav__link, 
+.section__title{
+    font-family: "Inria Bold", serif;
+}
+
+.center-btn{
+    text-align: center;
+}
+
+.btn-try{
+    background-color: #192B50;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: inherit;
+    padding: 20px 40px;
+    display: inline-block;
+}
+
+.btn-sign{
+    display: inline-block;
+    background-color: #00A2FA;
+    color: white;
+    padding: 10px 15px;
+}
+
+
+.btn-sign,
+.btn-try{
+    border-radius: 4px;
+}
+
+.section{
+    font-family: inherit;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__text{
+    font-family: "Inria Regula", serif;
+}
+
+.section__content{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.section--bg{
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.message{
+    font-size: 14px;
+    text-align: left;
+    display: inline-block;
+}
+
+.mg-top{
+    margin-top: 20px;
+}
+
+.footer-new{
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+@media screen and (min-width: 660px){
+
+    .title{
+        font-size: 3rem;
+    }
+
+
+    .logo{
+        font-size: 1.1rem;
+    }
+
+    .nav__container{
+        gap: 10px;
+    }
+
+    .nav__item{
+        cursor: pointer;
+    }
+    
+    .section{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .section__text{
+        font-size: 20px;
+    }
+
+    .order-1{
+        order: 1;
+    }
+}

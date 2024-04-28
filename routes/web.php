@@ -15,6 +15,10 @@ use App\Http\Controllers\apicontroller;
 */
 
 Route::get('/', function () {
+    return view('welcome-demo');
+});
+
+Route::get('/summary-demo',function(){
     return view('welcome');
 });
 
