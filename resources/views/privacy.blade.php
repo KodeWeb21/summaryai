@@ -12,6 +12,17 @@
     <meta property="og:image" content="https://i.imgur.com/cFvLNhX.png">
     <meta property="og:url" content="https://summaryai.dev">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <style> 
+        @font-face {     
+            font-family:"Inria Regular"; 
+            src: url("{{asset('fonts/InriaSans-Regular.ttf')}}");
+        }
+
+        @font-face{
+            font-family: "Inria Bold";
+            src: url("{{asset('fonts/InriaSans-Bold.ttf')}}")
+        }
+    </style>
     <link rel="stylesheet" href="{{ asset('css/section.css') }}">
 </head>
 <body>

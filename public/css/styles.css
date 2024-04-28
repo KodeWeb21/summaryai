@@ -68,6 +68,12 @@ body{
     background-color: inherit;
 }
 
+.inputbox__input,
+.inputbox__input--summary{
+    max-height: 380px;
+    overflow-y: auto;
+}
+
 .btn{
     background: none;
     border: 0;
@@ -146,6 +152,11 @@ body{
     color: inherit;
 }
 
+.inputbox__input,
+.inputbox__input--summary{
+    font-family: "Inria regular", serif;
+}
+
 
 @media screen and (min-width: 450px){
     .container--inputs{
@@ -157,7 +168,7 @@ body{
 @media screen and (min-width: 660px){
 
     .title{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .container--inputs{

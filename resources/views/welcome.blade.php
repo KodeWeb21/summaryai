@@ -30,7 +30,9 @@
 </head>
 <body>
     <header class="header">
-        <span class="logo">SummaryAI</span>
+        <span class="logo">
+            <a href="/" class="nav__link">SummaryAI</a>
+        </span>
         <nav class="nav nav--hidden">
           <ul class="nav__container">
              <li class="nav__item"><a class="nav__link" href="/frequent">Frequent questions</a></li>
