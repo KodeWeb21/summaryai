@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\apicontroller;
+use App\Http\Controllers\storageController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +33,5 @@ Route::get('/privacy',function(){
 });
 
 Route::post('/resume',[apiController::class,"resume"]);
+
+Route::post('/upload-pdf',[storageController::class,"store"]);
