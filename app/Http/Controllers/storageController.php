@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\pdfController;
 
 class storageController extends Controller
 {
@@ -11,7 +11,8 @@ class storageController extends Controller
         $request->validate([
             "pdfResume"=>"required"
         ]);
-        // $storage = Storage::disk("public")->put('prueba',$request->pdfResume);
-        $pathFilePdf = $request->file('pdfResume')->store('uploads');
+        $request->file('pdfResume')->store('uploads');
+        $pdf = new pdfController();
+        $pdf->getText($request->file('pdfResume'));
     }
 }
