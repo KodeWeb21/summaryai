@@ -55,6 +55,11 @@
             <div class="inputbox">
                 <div  class="inputbox__input inputbox__input--summary" id="summaryResult"></div>
                 <button class="btn" id="copy">
+                    <form method="POST" action="upload-pdf" enctype="multipart/form-data">
+                        @csrf
+                        <input type="file" accept=".pdf" name="pdfResume">
+                        <button>Enviar</button>
+                    </form>
                     <img src="{{asset('images/copy.svg')}}" class="btn-icon" >
                 </button>
             </div>
